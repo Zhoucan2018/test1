@@ -13,41 +13,60 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="2"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical|center"
+                android:text=" 美食视频"
+                android:textSize="30dp" />
+            <!--<ImageView-->
+                <!--android:id="@+id/ivtitle"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_weight="2"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="0dp"-->
+                <!--android:paddingTop="5dp"-->
+
+                <!--android:src="@drawable/titlevideo" />-->
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:gravity="center">
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/search"
             android:id="@+id/videosearch"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:onClick="searchvideo"/>
-        <ImageView
-            android:id="@+id/ivtitle"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="2"
-            android:paddingBottom="5dp"
-            android:paddingLeft="60dp"
-            android:paddingTop="5dp"
-            android:src="@drawable/titlevideo" />
-        <TextView
-            android:id="@+id/tvtitle"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="2"
-            android:gravity="left|center_vertical|center"
-            android:text="  美食视频"
-            android:textSize="18sp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/iconfont_add"
             android:id="@+id/add"/>
 
     </LinearLayout>
+
+</LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
@@ -61,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/photo1"
-                android:src="@drawable/chicken1"
+                android:src="@drawable/noodles"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo1"
@@ -83,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/photo2"
-                android:src="@drawable/chicken1"
+                android:src="@drawable/chop"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo2"
@@ -111,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/photo3"
-                android:src="@drawable/chicken1"
+                android:src="@drawable/chickenclaw"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo3"
@@ -133,7 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/photo4"
-                android:src="@drawable/chicken1"
+                android:src="@drawable/waffle"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo4"
@@ -149,6 +168,57 @@
 
     </LinearLayout>
     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/photo5"
+            android:src="@drawable/chicken1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:onClick="playvideo1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="红烧鸡块"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/photo6"
+            android:src="@drawable/porridge1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:onClick="playvideo2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="皮蛋瘦肉粥"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
 
@@ -160,8 +230,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:id="@+id/photo5"
-                android:src="@drawable/chicken1"
+                android:id="@+id/photo7"
+                android:src="@drawable/meat3"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo1"
@@ -169,7 +239,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="飘香拌面"
+                android:text="凉拌牛肉"
                 android:gravity="center" />
 
         </LinearLayout>
@@ -182,8 +252,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:id="@+id/photo6"
-                android:src="@drawable/chicken1"
+                android:id="@+id/photo8"
+                android:src="@drawable/meat2"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:onClick="playvideo2"
@@ -191,7 +261,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="排骨焖饭"
+                android:text="排骨汤"
                 android:gravity="center" />
 
 
@@ -199,6 +269,17 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="欢迎大家上传美食视频！" />
+    </LinearLayout>
 </LinearLayout>
 </ScrollView>
 

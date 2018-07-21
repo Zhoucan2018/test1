@@ -3,45 +3,47 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/green2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/update2"
+           />
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_vertical|center"
-            android:text="视频名称"
-            android:textSize="18sp" />
+
 
         <EditText
             android:id="@+id/etvideoname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:hint="输入名称将会获得一个视频ID" />
+            android:hint="输入名称将会获得一个视频ID"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_vertical|center"
-            android:text="视频地址"
-            android:textSize="18sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:hint="输入视频完整"
+            android:hint="输入视频完整路径"
             android:id="@+id/etvideopath"/>
     </LinearLayout>
     <LinearLayout
@@ -49,13 +51,6 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_vertical|center"
-            android:text="视频ID"
-            android:textSize="18sp" />
 
         <EditText
             android:layout_width="0dp"
@@ -73,26 +68,36 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="createvideoname"
-            android:text="创建视频" />
+            android:text="创建视频"
+            android:backgroundTint="#eeee00"
+            />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="updatevideo"
+            android:backgroundTint="#eeee00"
             android:text="上传视频" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1、输入视频名称，点击创建视频，将会得到一个视频ID"/>
+            android:text="1、输入视频名称，点击创建视频，将会得到一个视频ID"
+            android:textSize="22dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="22dp"
             android:text="2、输入视频完整地址如/DCIM/Camera/noodles.mp4，然后  输入得到的视频ID，点击上传视频即可"/>
     </LinearLayout>
 
